@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Pokeplace-Celo/static/css/main.a174681c.chunk.css",
+    "main.js": "/Pokeplace-Celo/static/js/main.47211966.chunk.js",
+    "main.js.map": "/Pokeplace-Celo/static/js/main.47211966.chunk.js.map",
+    "runtime-main.js": "/Pokeplace-Celo/static/js/runtime-main.81578652.js",
+    "runtime-main.js.map": "/Pokeplace-Celo/static/js/runtime-main.81578652.js.map",
+    "static/css/2.fd1e726d.chunk.css": "/Pokeplace-Celo/static/css/2.fd1e726d.chunk.css",
+    "static/js/2.525a7741.chunk.js": "/Pokeplace-Celo/static/js/2.525a7741.chunk.js",
+    "static/js/2.525a7741.chunk.js.map": "/Pokeplace-Celo/static/js/2.525a7741.chunk.js.map",
+    "static/js/3.a11d8ae2.chunk.js": "/Pokeplace-Celo/static/js/3.a11d8ae2.chunk.js",
+    "static/js/3.a11d8ae2.chunk.js.map": "/Pokeplace-Celo/static/js/3.a11d8ae2.chunk.js.map",
+    "index.html": "/Pokeplace-Celo/index.html",
+    "static/css/2.fd1e726d.chunk.css.map": "/Pokeplace-Celo/static/css/2.fd1e726d.chunk.css.map",
+    "static/css/main.a174681c.chunk.css.map": "/Pokeplace-Celo/static/css/main.a174681c.chunk.css.map",
+    "static/js/2.525a7741.chunk.js.LICENSE.txt": "/Pokeplace-Celo/static/js/2.525a7741.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/Pokeplace-Celo/static/media/bootstrap-icons.ea98e12d.woff2",
+    "static/media/pokeplace.74427232.jpg": "/Pokeplace-Celo/static/media/pokeplace.74427232.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81578652.js",
+    "static/css/2.fd1e726d.chunk.css",
+    "static/js/2.525a7741.chunk.js",
+    "static/css/main.a174681c.chunk.css",
+    "static/js/main.47211966.chunk.js"
+  ]
+}
