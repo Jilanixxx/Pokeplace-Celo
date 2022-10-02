@@ -41,8 +41,9 @@ contract PokePlace is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
     constructor() ERC721("PokePlace", "PP") {}
 
     // mint card
-    function mintCard(string memory uri, uint _price) public {
+    function mintCard(string calldata uri, uint _price) public {
         require(_price >= 1 ether, "price too low");
+        require(bytes(uri).length > 28, "Invalid uri"); 
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         Card storage newCard = cards[tokenId];
@@ -57,7 +58,7 @@ contract PokePlace is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
     // buy a card
     function buyCard(uint tokenId) external payable onlyOnSale(tokenId) {
         require(cards[tokenId].owner != msg.sender, "card owner can't buy");
-        require(msg.value == cards[tokenId].price, "Amount sent too low");
+        require(msg.value == cards[tokenId].price, "Send correct amount");
         address owner = cards[tokenId].owner;
         cards[tokenId].owner = msg.sender;
         cards[tokenId].onSale = false;
@@ -86,6 +87,16 @@ contract PokePlace is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
         cards[tokenId].onSale = false;
         _transfer(address(this), msg.sender, tokenId);
     }
+
+    //change price
+    function changePrice(uint tokenId, uint price)
+        public
+        onlyCardOwner(tokenId)
+        onlyOnSale(tokenId)
+    {
+            cards[tokenId].price = price;
+    }        
+
 
     // delete a card
     function deleteCard(uint tokenId)
