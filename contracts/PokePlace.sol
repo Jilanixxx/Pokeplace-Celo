@@ -43,7 +43,7 @@ contract PokePlace is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
     // mint card
     function mintCard(string calldata uri, uint _price) public {
         require(_price >= 1 ether, "price too low");
-        require(bytes(uri).length > 28, "Invalid uri"); 
+        require(bytes(uri).length > 0, "Invalid uri"); 
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         Card storage newCard = cards[tokenId];
